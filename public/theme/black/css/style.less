@@ -1,0 +1,67 @@
+// andre style less
+@blue: #432F75;
+@blue2: #15063A;
+
+@white: #fff;
+@black: #2f3134;
+
+@dark: #E9E9EA;
+
+// general
+body {
+	background-color: @dark;
+	font-size: 14px;
+}
+
+// class
+.box-login {
+	width: 450px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: @white;
+	border-radius: 3px;
+	margin-top: 100px;
+
+	-webkit-box-shadow: 2px 2px 3px 2px #A2A2A3;
+box-shadow: 2px 2px 3px 2px #A2A2A3;
+}
+
+
+// menu
+.main-menu {
+	background-color: @blue;
+	margin-top: 30px;
+
+	ul li {
+		a {
+			color: @white;
+			font-size: 16px;
+
+			&:hover {
+				background-color: @blue2;
+			}
+		}
+
+		ul.dropdown-menu {
+			background-color: @blue;
+
+			li {
+				a {
+
+					&:hover {
+						background-color: @blue2;
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: @blue2;
+}
+
+.main-content {
+	background-color: @white;
+	padding: 50px 30px;
+}
